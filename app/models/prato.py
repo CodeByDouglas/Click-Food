@@ -7,6 +7,7 @@ class Prato(db.Model):
     foto = db.Column(db.String(255))
     descricao = db.Column(db.Text)
     valor = db.Column(db.Float, nullable=False)
+    status = db.Column(db.String(50), default='ativo')
 
     def __repr__(self):
         return f'<Prato {self.nome}>'
