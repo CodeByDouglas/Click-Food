@@ -99,4 +99,4 @@ Thumbs.db
 *.log
 
 # Database (opcional - descomente se quiser versionar o banco)
-# instance/database.db
+instance/database.db
