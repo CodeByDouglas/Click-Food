@@ -1,0 +1,1 @@
+# Este arquivo permite importar os modelos como módulos 
