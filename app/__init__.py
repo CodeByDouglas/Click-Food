@@ -22,11 +22,13 @@ def create_app():
     
     # Importar modelos para que sejam registrados com o SQLAlchemy
     from app.models import prato, bebida, pedido
+
+    # Registrar blueprint de estabelecimento
+    from app.routes.estabelecimento.cadastrar_cardapio import estabelecimento_bp
+    app.register_blueprint(estabelecimento_bp)
     
-    # Registrar blueprints aqui (quando criarmos as rotas)
+    # Registrar outros blueprints aqui se necessário
     # from app.routes.cliente import cliente_bp
-    # from app.routes.estabelecimento import estabelecimento_bp
     # app.register_blueprint(cliente_bp)
-    # app.register_blueprint(estabelecimento_bp)
     
     return app 
